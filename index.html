@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ed1a680f36.js" crossorigin="anonymous"></script>
+</head>
+<body>
+         <div id="header">
+        
+            <div class="container">
+               
+                <nav>
+                     <h1 class="hunain"><span>H</span>unain</h1>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contacts</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="headertext">
+                   
+                    <h1>Hi I'm <span>Hunain Ahmed</span><br> From Pakistan</h1>
+                    <p>I'm <span class="smart-text">Front-end Developer</span></p>
+                </div>
+            </div>
+         </div>
+              <!-- --------------------ABOUT SECTION------------------- -->
+
+              <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/final.jpeg">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>I'm Hunain Ahmed, a passionate web developer skilled in HTML, CSS, and JavaScript, with expertise in WordPress and Figma. I love creating innovative websites that provide seamless user experiences. Let’s collaborate to bring your vision to life!</p>
+            
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                                <!-- <p class="tab-links" onclick="openTab('experience')">Experience</p> -->
+                                <p class="tab-links" onclick="openTab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Web Development</span> <br>Website Developing Using Coding<br></li>
+                                    <li><span>WordPress Development</span><br>Website Developing Using WordPress</li>
+                                    <li><span>Figma</span><br>Website Design Using Figma Software</li>
+                                </ul>
+                            </div>
+                            <!-- <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2024 - Current</span><br>Web Developing Training From Online</li>
+                                    <li><span>2022 - 2024</span><br>Graduation In BSCS</li>
+                                    <li><span>2019 - 2021</span><br>In DJ Science College</li>
+                                </ul>
+                            </div> -->
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2019</span><br>Matric From Trinity Methodist Higher Sec School</li>
+                                    <li><span>2020</span><br>High School DJ Govt Science College</li>
+                                    <li><span>2024</span><br>Currently Doing Bachelor In Computer Science From Sindh Madarsatul Islam University</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------------------SKILLS BARS----------------------------------------- -->
+            <div class="skills-container">
+                <h2>Technical Skills</h2>
+                <div class="skill">
+                  <div class="skill-name">HTML</div>
+                  <div class="skill-bar">
+                    <div class="skill-level" data-percent="90"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <div class="skill-name">CSS</div>
+                  <div class="skill-bar">
+                    <div class="skill-level" data-percent="85"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <div class="skill-name">JavaScript</div>
+                  <div class="skill-bar">
+                    <div class="skill-level" data-percent="85"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <div class="skill-name">Tailwind CSS</div>
+                  <div class="skill-bar">
+                    <div class="skill-level" data-percent="80"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Figma</div>
+                    <div class="skill-bar">
+                      <div class="skill-level" data-percent="60"></div>
+                    </div>
+                  </div>
+                  <div class="skill">
+                    <div class="skill-name">Git</div>
+                    <div class="skill-bar">
+                      <div class="skill-level" data-percent="85"></div>
+                    </div>
+                  </div>
+                <div class="skill">
+                    <div class="skill-name">WordPress</div>
+                    <div class="skill-bar">
+                      <div class="skill-level" data-percent="75"></div>
+                    </div>
+                  </div>
+              </div>
+          <!-- --------------------------SERVICES----------------------------- -->
+    
+          <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Serives</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>Providing expert web development services to design and build responsive, functional, and visually engaging websites tailored to your needs.</p>
+                        <a href="detail.html">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-wordpress"></i>
+                        <h2>WordPress</h2>
+                        <p>Offering WordPress development services, including custom themes, plugins, and site optimization, to create dynamic, user-friendly websites that elevate your online presence.</p>
+                        <a href="detail.html">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-figma"></i>
+                        <h2>Web Design</h2>
+                        <p>Creating modern, user-centric web designs using Figma. I craft visually engaging layouts that ensure a seamless user experience across all devices.</p>
+                        <a href="detail.html">Learn More</a>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+            <!-- ------------------PORTFOLIO---------------------------------- -->
+                    
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/project1.jpg">
+                        <div class="layer">
+                            <h3>Real Estate Website</h3>
+                            <p>This Web Is Made Using HTML,CSS And Javascript. <br>(Fully Resposive)</p>
+                            <a href="https://real-estate-hunain.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/newtest.jpg">
+                        <div class="layer">
+                            <h3>Whether Updating Website</h3>
+                            <p>This Web Is Made Using HTML,CSS And Javascript.  <br>(Fully Resposive)</p>
+                            <a href="https://wheather-web-hunain.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/project2.jpg">
+                        <div class="layer">
+                            <h3>QR Code Genrater</h3>
+                            <p>This Web Is Made Using HTML,CSS And Javascript.  <br>(Fully Resposive)</p>
+                            <a href="https://qr-genrator-hunain.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/food-web.jpg">
+                        <div class="layer">
+                            <h3>Resturent Website</h3>
+                            <p>This Web Is Made Using HTML,CSS And Javascript.  <br>(Fully Resposive)</p>
+                            <a href="https://food-web-by-hunain.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+<!-- ---------------------------------CONTACT---------------------------- -->
+ 
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> memonhunain88@gmail.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i> +92 3092376242</p>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/share/LYaaLosWmJCnfhgF/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/hunainmemon0?igsh=bWJ2bHRldzA2ZzF0"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/hunain-ahmed-9439682a0/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/HunainAhmed.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="513df1aa-069a-42a1-a9ee-f9557274b3d1">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright &#169; Made By Hunain Ahmed</p>
+    </div>
+</div>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('.smart-text', {
+      strings: ["Wordpress Developer"],
+      typeSpeed: 140,
+      backSpeed: 140,
+      loop: true
+    });
+</script>
+    <script src="app.js"></script>
+</body>
+</html>
